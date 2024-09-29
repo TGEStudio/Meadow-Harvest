@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80148565ffe0368429711446275ab5cf, type: 3}
+  m_Name: Default Plant
+  m_EditorClassIdentifier: 
+  _pName: TestPlant
+  _pCost: 0
+  _pGrowTimeSec: 15
+  _pSprites:
+  - {fileID: 21300000, guid: 5802c1764e1d514469269ebd15fc4b03, type: 3}
+  - {fileID: 21300000, guid: ceb9d72169ac41944aabdc9a8db961f1, type: 3}
+  - {fileID: 21300000, guid: 5961ffa0a6186b54a9c61aa6b198b3b9, type: 3}
+  _pSpriteIcon: {fileID: 21300000, guid: 9a4307922b9a55748ba2ebdd0047fc05, type: 3}
+  _pSpriteItem: {fileID: 21300000, guid: ec6eb25b1cc375f4e8407993c6a38c8b, type: 3}
