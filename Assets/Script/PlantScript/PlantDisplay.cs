@@ -24,8 +24,8 @@ public class PlantDisplay : MonoBehaviour
 
     public virtual void Display(object sender, EventArgs e)
     {
-        waterIcon.GetComponent<Image>().enabled = _field.fIsWaterable;
-        harvestIcon.GetComponent<Image>().enabled = _field.fIsHarvestable;
+        waterIcon.SetActive(_field.fIsWaterable);
+        harvestIcon.SetActive(_field.fIsHarvestable);
         
         if (_field.fPlantObj == null)
         {

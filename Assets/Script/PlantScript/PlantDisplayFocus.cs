@@ -20,9 +20,6 @@ public class PlantDisplayFocus : PlantDisplay
     public override void Display(object sender, EventArgs e)
     {
         _field = Logic.FieldManager.selectedField;
-        
-        waterIcon.transform.GetChild(0).GetComponent<Button>().interactable = _field.fIsWaterable;
-        harvestIcon.transform.GetChild(0).GetComponent<Button>().interactable = _field.fIsHarvestable;
 
         base.Display(sender, e);
 
@@ -47,7 +44,7 @@ public class PlantDisplayFocus : PlantDisplay
     }
     void SetTimeRemaining()
     {
-        if (_field.fTimeRemaining.TotalSeconds <= 0)
+        if (_field.fIsHarvestable)
         {
             timeTextDark.text = "Harvestable";
             return;

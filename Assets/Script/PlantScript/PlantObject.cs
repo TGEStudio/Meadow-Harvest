@@ -18,6 +18,8 @@ public class PlantObject : ScriptableObject
     private Sprite _pSpriteIcon;
 	[SerializeField]
     private Sprite _pSpriteItem;
+	[SerializeField]
+    private string _pDescription;
 
     public string pName { get { return _pName; } }
 	public float pCost { get { return _pCost; } }
@@ -26,4 +28,5 @@ public class PlantObject : ScriptableObject
 	public Sprite[] pSprites { get { return _pSprites; } }
 	public Sprite pSpriteIcon { get { return _pSpriteIcon; } }
 	public Sprite pSpriteItem { get { return _pSpriteItem; } }
+	public string pDescription { get { return _pDescription; } }
 }
